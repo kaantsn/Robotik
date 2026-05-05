@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="explosion_effect">
+    <static>true</static>
+    <link name="link">
+      <particle_emitter name="fireball" type="box">
+        <emitting>true</emitting>
+        <duration>0.5</duration>
+        <lifetime>0.6</lifetime>
+        <rate>15</rate> <particle_size>6.0 6.0 6.0</particle_size> <min_velocity>0</min_velocity><max_velocity>2</max_velocity>
+        <scale_rate>5</scale_rate>
+        <material><ambient>1 0.3 0 1</ambient><diffuse>1 0.3 0 1</diffuse></material>
+      </particle_emitter>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,4 @@
+<?xml version="1.0" ?><sdf version="1.8"><model name="enemy_missile">
+  <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl"/>
+  <link name="base_link"><gravity>false</gravity><visual name="vis"><geometry><cylinder radius="0.3" length="2.0"/></geometry><pose>0 0 0 0 1.5708 0</pose><material><ambient>1 0 0 1</ambient></material></visual></link>
+</model></sdf>

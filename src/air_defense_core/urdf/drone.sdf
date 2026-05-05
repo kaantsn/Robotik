@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="drone_0">
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl"/>
+    <link name="base_link">
+      <gravity>false</gravity>
+      <visual name="body"><geometry><box><size>2.0 0.4 0.3</size></box></geometry><material><ambient>0.8 0.1 0.1 1</ambient><diffuse>0.8 0.1 0.1 1</diffuse></material></visual>
+      <visual name="wings"><geometry><box><size>0.6 2.5 0.1</size></box></geometry><origin xyz="-0.2 0 0.1" rpy="0 0 0"/><material><ambient>0.8 0.1 0.1 1</ambient><diffuse>0.8 0.1 0.1 1</diffuse></material></visual>
+    </link>
+  </model>
+</sdf>

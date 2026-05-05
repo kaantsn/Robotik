@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="defense_missile">
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl"/>
+    <link name="base_link">
+      <gravity>false</gravity>
+      <visual name="body"><geometry><cylinder radius="0.1" length="1.0"/></geometry><pose>0 0 0 0 1.5708 0</pose><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual>
+      <visual name="nose"><geometry><cone><radius>0.1</radius><length>0.3</length></cone></geometry><pose>0.65 0 0 0 1.5708 0</pose><material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.9 0.9 0.9 1</diffuse></material></visual>
+      <visual name="fins_front"><geometry><box><size>0.2 0.4 0.02</size></box></geometry><pose>0.4 0 0 0 0 0</pose><material><ambient>0 0.3 0.8 1</ambient><diffuse>0 0.3 0.8 1</diffuse></material></visual>
+      <visual name="fins_back"><geometry><box><size>0.3 0.6 0.02</size></box></geometry><pose>-0.4 0 0 0 0 0</pose><material><ambient>0 0.3 0.8 1</ambient><diffuse>0 0.3 0.8 1</diffuse></material></visual>
+      
+      <particle_emitter name="trail" type="box">
+        <pose>-0.6 0 0 0 0 0</pose>
+        <emitting>true</emitting>
+        <duration>0</duration>
+        <lifetime>0.3</lifetime>
+        <rate>40</rate> <particle_size>0.4 0.4 0.4</particle_size>
+        <min_velocity>1</min_velocity><max_velocity>2</max_velocity>
+        <material><ambient>1 0.4 0 1</ambient><diffuse>1 0.4 0 1</diffuse></material>
+      </particle_emitter>
+    </link>
+  </model>
+</sdf>

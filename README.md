@@ -2,9 +2,12 @@
 
 Bu proje, **ROS 2** altyapısı üzerinde çalışan otonom bir Komuta Kontrol (C2) ve Simülasyon sistemidir. 10 adet taretin (launcher), 360 derecelik bir taktik sahada sürü (swarm) halinde gelen 100 farklı tehdidi otonom olarak paylaşıp imha etmesini simüle eder.
 
-> **📽️ Proje Tanıtım Videosu**
-> https://github.com/user-attachments/assets/e5e299a3-3336-4173-bce4-2ce14c74a9de
-
+## 📺 Proje Tanıtım Videosu
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/e5e299a3-3336-4173-bce4-2ce14c74a9de" width="100%" controls autoplay muted loop>
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+</div>
 ## 🧠 Algoritma ve Mantıksal Altyapı
 
 Sistem, insan müdahalesine ihtiyaç duymadan "Karar Destek" ve "Angajman" süreçlerini şu algoritmalarla yönetir:
